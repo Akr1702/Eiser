@@ -4,7 +4,7 @@ const dotenv = require("dotenv").config()
 const morgan = require("morgan")
 const rootroute = require('./routes/rootroute')
 const connectDB = require("./config/db")
-const productroute=require("./controllers/products/getproductcontroller")
+const productroute=require("./routes/productroute")
 
 const app =express()
 const PORT = process.env.PORT ||  7000 || 8000 
